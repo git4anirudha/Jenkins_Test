@@ -1,0 +1,16 @@
+USE [Jenkins_Test]
+GO
+
+SELECT [PlanName]
+      ,[FileNM]
+      ,[ExecuteTest]
+      ,[SourceTable]
+      ,[DQCheck]
+      ,[DQFormat]
+      ,[SourceColumns]
+      ,[TargetTable]
+      ,[TargetColumns]
+  FROM [dbo].[SP_Utility_DQ_TestScenario]
+GO
+
+Commit
